@@ -3,6 +3,8 @@
 
 同 SDK の練習用リポジトリです。
 
+- [Live2D Cubism SDK とは | Live2D Cubism](https://www.live2d.com/sdk/about/)
+
 <!-- omit in toc -->
 ## 目次
 
@@ -129,7 +131,6 @@ Cubism 4 SDK for Web R7
 
 ## 参考文献
 
-- [Live2D Cubism SDK とは | Live2D Cubism](https://www.live2d.com/sdk/about/)
 - [Cubism SDK for Web | SDKマニュアル | Live2D Manuals & Tutorials](https://docs.live2d.com/cubism-sdk-manual/cubism-sdk-for-web/)
 - [Live2D Cubism SDK チュートリアル | SDKチュートリアル | Live2D Manuals & Tutorials](https://docs.live2d.com/cubism-sdk-tutorials/top/)
 - [Cubism SDK ワークショップ「【初心者向け】WebでもLive2Dが使える！Cubism SDK for Webを使ってみよう！」 #Cubism_SDK - YouTube](https://www.youtube.com/watch?v=tQdkFvw7X-E)
