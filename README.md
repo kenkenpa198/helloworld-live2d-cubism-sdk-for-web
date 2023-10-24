@@ -45,11 +45,15 @@ Cubism 4 SDK for Web R7
 
 ### 1. Cubism SDK for Web のダウンロード
 
-[Live2D Cubism SDK for Web ダウンロード | Live2D Cubism](https://www.live2d.com/sdk/download/web/) > `Cubism SDK for Web` > `最新版をダウンロード` から最新の Cubism SDK パッケージをダウンロードする。
+当リポジトリにはコアファイルが含まれていないので公式サイトから最新の Cubism SDK パッケージをダウンロードする。
+
+- [Live2D Cubism SDK for Web ダウンロード | Live2D Cubism](https://www.live2d.com/sdk/download/web/) > `Cubism SDK for Web` > `最新版をダウンロード`
+
+展開後、`CubismSdkForWeb-4-r.7/Core` 内のファイルを当リポジトリの同ディレクトリへ配置する。もしくは `CubismSdkForWeb-4-r.7` をすべて置き換える。
 
 ### 2. 環境構築
 
-1. VS Code でトップディレクトリを開く。
+1. VS Code でディレクトリ `CubismSdkForWeb-4-r.7` をトップディレクトリとして開く。
 2. 推奨拡張機能「EditorConfig for VS Code」をインストールする。
 3. `Shift + Ctrl + P` > `Tasks: Run Task` から Node.js の必要パッケージをインストールする。
     1. `npm: install - Samples/TypeScript/Demo`
