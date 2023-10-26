@@ -1,7 +1,7 @@
 <!-- omit in toc -->
 # practice - Live2D Cubism SDK for Web
 
-同 SDK の練習用リポジトリ。
+同 SDK の練習用リポジトリです。
 
 - [Live2D Cubism SDK とは | Live2D Cubism](https://www.live2d.com/sdk/about/)
 
@@ -13,9 +13,10 @@ GitHub Pages でのデプロイ結果はこちら。
 ## 目次
 
 - [Live2D Cubism SDK for Web について](#live2d-cubism-sdk-for-web-について)
-    - [使用したパッケージ](#使用したパッケージ)
+    - [使用したパッケージのバージョン](#使用したパッケージのバージョン)
     - [Live2D Cubism Core について](#live2d-cubism-core-について)
     - [Live2D Cubism Components について](#live2d-cubism-components-について)
+    - [Live2D Cubism サンプルデータについて](#live2d-cubism-サンプルデータについて)
     - [オリジナルからの変更箇所](#オリジナルからの変更箇所)
 - [ビルド・公開手順](#ビルド公開手順)
     - [1. Cubism SDK for Web のダウンロード](#1-cubism-sdk-for-web-のダウンロード)
@@ -26,32 +27,42 @@ GitHub Pages でのデプロイ結果はこちら。
 - [メモ](#メモ)
     - [モデルを追加するとき](#モデルを追加するとき)
     - [ビルド成果物の追跡について](#ビルド成果物の追跡について)
-    - [その他](#その他)
+    - [その他メモ](#その他メモ)
 - [参考文献](#参考文献)
 
 ## Live2D Cubism SDK for Web について
 
-### 使用したパッケージ
+使用したパッケージや使用許諾に関する情報を掲載しています。
+
+### 使用したパッケージのバージョン
 
 Cubism 4 SDK for Web R7
 
 - [Live2D Cubism SDK for Web ダウンロード | Live2D Cubism](https://www.live2d.com/sdk/download/web/)
 
+パッケージに含まれる各種ファイルの許諾情報は以降のセクションを参照してください。
+
 ### Live2D Cubism Core について
 
-[Live2D Proprietary Software 使用許諾契約](https://www.live2d.com/eula/live2d-proprietary-software-license-agreement_jp.html) に則り、Live2D Cubism Core は当リポジトリ上で管理・公開していない。Cubism Core は Cubism SDK 配布パッケージに同梱されているので、別途ダウンロードすること。
+[Live2D Proprietary Software 使用許諾契約](https://www.live2d.com/eula/live2d-proprietary-software-license-agreement_jp.html) に則り、Live2D Cubism Core は当リポジトリ上で管理・公開していません。Cubism Core は Cubism SDK 配布パッケージに同梱されているので、別途ダウンロードしてください。
 
 ### Live2D Cubism Components について
 
-[Live2D Open Software 使用許諾契約](https://www.live2d.com/eula/live2d-open-software-license-agreement_jp.html) に則り、下記コンポーネントは当リポジトリ上で管理・公開している。
+[Live2D Open Software 使用許諾契約](https://www.live2d.com/eula/live2d-open-software-license-agreement_jp.html) に則り、下記コンポーネントは当リポジトリ上で管理・公開しています。
 
 - Live2D Cubism Components
     - [Cubism Web Samples](https://github.com/Live2D/CubismWebSamples)
     - [Cubism Web Framework](https://github.com/Live2D/CubismWebFramework)
 
+### Live2D Cubism サンプルデータについて
+
+[Live2D Cubism サンプルデータ利用条件](https://www.live2d.com/eula/live2d-sample-model-terms_jp.html) に則り、Cubism Web Samples 配下のサンプルデータを当リポジトリで使用しています。
+
+本作品のキャラクターには株式会社Live2Dの著作物であるサンプルデータが株式会社Live2Dの定める規約に従って用いられています。本作品は制作者の完全な自己の裁量で制作されています。
+
 ### オリジナルからの変更箇所
 
-当リポジトリの `Cubism 4 SDK for Web R7` 配下のサンプルファイルについて、オリジナルから記述を一部更新している。
+当リポジトリの `Cubism 4 SDK for Web R7` 配下のサンプルファイルについて、オリジナルから記述を一部更新しています。
 
 `CubismSdkForWeb-4-r.7/Samples/TypeScript/Demo/index.html`
 
@@ -64,7 +75,7 @@ Cubism 4 SDK for Web R7
 <head>
 ```
 
-Live2D Cubism Core の再頒布・公開は、前述の規約により不可能なため GitHub リポジトリ上に配置できない。そのため公式でホスティングされている下記ファイルを参照している。
+Live2D Cubism Core の再頒布・公開は、前述の規約により不可能なため GitHub リポジトリ上に配置できない。そのため公式でホスティングされている下記ファイルを参照しています。
 
 - [Live2D Cubism SDK for Web ダウンロード | Live2D Cubism](https://www.live2d.com/sdk/download/web/#url_cubismcore) > `Cubism Core for Web`
 
@@ -76,7 +87,7 @@ Live2D Cubism Core の再頒布・公開は、前述の規約により不可能�
 
 ### 1. Cubism SDK for Web のダウンロード
 
-当リポジトリにはコアファイルが含まれていないので公式サイトから最新の Cubism SDK パッケージをダウンロードする。
+前述の使用許諾に則り、当リポジトリにはコアファイルが含まれていない。このため公式サイトから最新の Cubism SDK パッケージをダウンロードする。
 
 - [Live2D Cubism SDK for Web ダウンロード | Live2D Cubism](https://www.live2d.com/sdk/download/web/) > `Cubism SDK for Web` > `最新版をダウンロード`
 
@@ -190,7 +201,7 @@ GitHub リポジトリへプッシュ後、GitHub Pages で公開設定を行う
 # dist ★ コメントアウト
 ```
 
-### その他
+### その他メモ
 
 - 当リポジトリは `CubismSdkForWeb-4-r.7` ディレクトリ配下に `Framework` `Samples` を配置しているため、[公式チュートリアル](https://docs.live2d.com/cubism-sdk-tutorials/sample-build-web/) へ掲載されている各 npm コマンド先頭に `CubismSdkForWeb-4-r.7` が追加されている。
 
