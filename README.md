@@ -75,7 +75,7 @@ Cubism 4 SDK for Web R7
 <head>
 ```
 
-Live2D Cubism Core の再頒布・公開は、前述の規約により不可能なため GitHub リポジトリ上に配置できない。そのため公式でホスティングされている下記ファイルを参照しています。
+Live2D Cubism Core の再頒布・公開は前述の規約により禁止されているので、GitHub リポジトリ上に配置できません。そのため公式でホスティングされている下記ファイルを参照しています。
 
 - [Live2D Cubism SDK for Web ダウンロード | Live2D Cubism](https://www.live2d.com/sdk/download/web/#url_cubismcore) > `Cubism Core for Web`
 
