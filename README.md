@@ -1,9 +1,13 @@
 <!-- omit in toc -->
 # practice - Live2D Cubism SDK for Web
 
-同 SDK の練習用リポジトリです。
+同 SDK の練習用リポジトリ。
 
 - [Live2D Cubism SDK とは | Live2D Cubism](https://www.live2d.com/sdk/about/)
+
+GitHub Pages でのデプロイ結果はこちら。
+
+- [https://kenkenpa198.github.io/practice-live2d-cubism-sdk-for-web/CubismSdkForWeb-4-r.7/Samples/TypeScript/Demo/index.html](https://kenkenpa198.github.io/practice-live2d-cubism-sdk-for-web/CubismSdkForWeb-4-r.7/Samples/TypeScript/Demo/index.html)
 
 <!-- omit in toc -->
 ## 目次
@@ -12,13 +16,17 @@
     - [使用したパッケージ](#使用したパッケージ)
     - [Live2D Cubism Core について](#live2d-cubism-core-について)
     - [Live2D Cubism Components について](#live2d-cubism-components-について)
-- [実行手順](#実行手順)
+    - [オリジナルからの変更箇所](#オリジナルからの変更箇所)
+- [ビルド・公開手順](#ビルド公開手順)
     - [1. Cubism SDK for Web のダウンロード](#1-cubism-sdk-for-web-のダウンロード)
     - [2. 環境構築](#2-環境構築)
-    - [3. ビルド・サーバの起動・表示](#3-ビルドサーバの起動表示)
-    - [4. サーバの停止](#4-サーバの停止)
+    - [3. ビルド](#3-ビルド)
+    - [4. 簡易サーバの起動・表示 (オプション)](#4-簡易サーバの起動表示-オプション)
+    - [5. GitHub Pages で公開](#5-github-pages-で公開)
 - [メモ](#メモ)
     - [モデルを追加するとき](#モデルを追加するとき)
+    - [ビルド成果物の追跡について](#ビルド成果物の追跡について)
+    - [その他](#その他)
 - [参考文献](#参考文献)
 
 ## Live2D Cubism SDK for Web について
@@ -31,17 +39,40 @@ Cubism 4 SDK for Web R7
 
 ### Live2D Cubism Core について
 
-[Live2D Proprietary Software 使用許諾契約](https://www.live2d.com/eula/live2d-proprietary-software-license-agreement_jp.html) に則り、Live2D Cubism Core は当リポジトリ上で管理・公開していません。Cubism Core は Cubism SDK 配布パッケージに同梱されているので、別途ダウンロードしてください。
+[Live2D Proprietary Software 使用許諾契約](https://www.live2d.com/eula/live2d-proprietary-software-license-agreement_jp.html) に則り、Live2D Cubism Core は当リポジトリ上で管理・公開していない。Cubism Core は Cubism SDK 配布パッケージに同梱されているので、別途ダウンロードすること。
 
 ### Live2D Cubism Components について
 
-[Live2D Open Software 使用許諾契約](https://www.live2d.com/eula/live2d-open-software-license-agreement_jp.html) に則り、下記コンポーネントは当リポジトリ上で管理・公開しています。
+[Live2D Open Software 使用許諾契約](https://www.live2d.com/eula/live2d-open-software-license-agreement_jp.html) に則り、下記コンポーネントは当リポジトリ上で管理・公開している。
 
 - Live2D Cubism Components
     - [Cubism Web Samples](https://github.com/Live2D/CubismWebSamples)
     - [Cubism Web Framework](https://github.com/Live2D/CubismWebFramework)
 
-## 実行手順
+### オリジナルからの変更箇所
+
+当リポジトリの `Cubism 4 SDK for Web R7` 配下のサンプルファイルについて、オリジナルから記述を一部更新している。
+
+`CubismSdkForWeb-4-r.7/Samples/TypeScript/Demo/index.html`
+
+```html
+<head>
+  ...
+  <!-- <script src = "../../../Core/live2dcubismcore.js"></script> -->                         ★ コメントアウト
+  <script src="https://cubism.live2d.com/sdk-web/cubismcore/live2dcubismcore.min.js"></script> ★ ホスティング先の URL を記述
+  ...
+<head>
+```
+
+Live2D Cubism Core の再頒布・公開は、前述の規約により不可能なため GitHub リポジトリ上に配置できない。そのため公式でホスティングされている下記ファイルを参照している。
+
+- [Live2D Cubism SDK for Web ダウンロード | Live2D Cubism](https://www.live2d.com/sdk/download/web/#url_cubismcore) > `Cubism Core for Web`
+
+## ビルド・公開手順
+
+ローカル環境上でのビルドから GitHub Pages による公開までの手順メモ。
+
+※ 参考文献のチュートリアルや動画を参考にまとめましたが、お試しになる際は各規約をご確認の上自己責任でお願いします。
 
 ### 1. Cubism SDK for Web のダウンロード
 
@@ -53,11 +84,11 @@ Cubism 4 SDK for Web R7
 
 ### 2. 環境構築
 
-1. VS Code でディレクトリ `CubismSdkForWeb-4-r.7` をトップディレクトリとして開く。
+1. VS Code でトップディレクトリを開く。
 2. 推奨拡張機能「EditorConfig for VS Code」をインストールする。
 3. `Shift + Ctrl + P` > `Tasks: Run Task` から Node.js の必要パッケージをインストールする。
-    1. `npm: install - Samples/TypeScript/Demo`
-    2. `npm: install - Framework`
+    1. `npm: install - CubismSdkForWeb-4-r.7/Framework`
+    2. `npm: install - CubismSdkForWeb-4-r.7/Samples/TypeScript/Demo`
 4. インストールしたパッケージを確認する。
 
     ```shell
@@ -95,19 +126,33 @@ Cubism 4 SDK for Web R7
     └── typescript@5.0.4
     ```
 
-### 3. ビルド・サーバの起動・表示
+### 3. ビルド
 
-1. `Shift + Ctrl + P` > `Tasks: Run Build Task` > `npm: build - Samples/TypeScript/Demo` からビルドを実行する。
-2. `Shift + Ctrl + P` > `Tasks: Run Task` > `npm: start` で簡易サーバを起動する。
-3. `F5` (デバッグの開始) もしくはターミナルに表示された `http://localhost:5000/` をブラウザで開く。
+1. `Shift + Ctrl + P` > `Tasks: Run Build Task` > `npm: build - CubismSdkForWeb-4-r.7/Samples/TypeScript/Demo` からビルドを実行する。
+2. `CubismSdkForWeb-4-r.7/Samples/TypeScript/Demo/dist/bundle.js` が生成されたことを確認する (※) 。
+
+### 4. 簡易サーバの起動・表示 (オプション)
+
+ローカル環境でテストする場合の手順。
+
+1. `Shift + Ctrl + P` > `Tasks: Run Task` > `npm: start - CubismSdkForWeb-4-r.7/Samples/TypeScript/Demo` で簡易サーバを起動する。
+2. `F5` (デバッグの開始) もしくはターミナルに表示された `http://localhost:5000/` をブラウザで開く。
     1. ブラウザで開いた場合は `Samples` > `TypeScript` > `Demo` を開く。
-4. Haru さんが表示されれば OK 。
+3. Haru さんが表示されれば OK 。
 
     ![haru](images/haru.png)
 
-### 4. サーバの停止
+(※) 簡易サーバを終了するときは `Shift + Ctrl + P` > `Tasks: Terminate Task` > `npm: start - CubismSdkForWeb-4-r.7/Samples/TypeScript/Demo` を実行する。
 
-簡易サーバを終了するときは `Shift + Ctrl + P` > `Tasks: Terminate Task` > `npm: start - Samples/TypeScript/Demo` を実行する。
+### 5. GitHub Pages で公開
+
+GitHub リポジトリへプッシュ後、GitHub Pages で公開設定を行う。
+
+- 参考) [GitHub Pagesのクイックスタート - GitHub Docs](https://docs.github.com/ja/pages/quickstart)
+
+`CubismSdkForWeb-4-r.7/Samples/TypeScript/Demo/index.html` へブラウザからアクセスして表示に問題が無ければ OK 。当リポジトリの場合は下記の URL となる。
+
+- [https://kenkenpa198.github.io/practice-live2d-cubism-sdk-for-web/CubismSdkForWeb-4-r.7/Samples/TypeScript/Demo/index.html](https://kenkenpa198.github.io/practice-live2d-cubism-sdk-for-web/CubismSdkForWeb-4-r.7/Samples/TypeScript/Demo/index.html)
 
 ## メモ
 
@@ -132,6 +177,22 @@ Cubism 4 SDK for Web R7
     ```
 
 3. 再度ビルドする。
+
+### ビルド成果物の追跡について
+
+`.../dist/bundle.js` のようなビルド成果物は本来 Git の追跡対象外とすることが望ましいが、GitHub Pages で公開する際に必須となる。このため `.gitignore` 上では追跡対象外にしていない。
+
+`.gitignore`
+
+```shell
+# Nuxt.js build / generate output
+.nuxt
+# dist ★ コメントアウト
+```
+
+### その他
+
+- 当リポジトリは `CubismSdkForWeb-4-r.7` ディレクトリ配下に `Framework` `Samples` を配置しているため、[公式チュートリアル](https://docs.live2d.com/cubism-sdk-tutorials/sample-build-web/) へ掲載されている各 npm コマンド先頭に `CubismSdkForWeb-4-r.7` が追加されている。
 
 ## 参考文献
 
