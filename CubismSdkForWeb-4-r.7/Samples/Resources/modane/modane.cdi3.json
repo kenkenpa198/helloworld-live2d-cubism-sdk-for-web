@@ -132,11 +132,14 @@
 			"Name": "髪揺れ　横"
 		},
 		{
+<<<<<<< HEAD
 			"Id": "ParamArm",
 			"GroupId": "",
 			"Name": "腕"
 		},
 		{
+=======
+>>>>>>> origin/feature/practice
 			"Id": "ParamHairBack",
 			"GroupId": "",
 			"Name": "髪揺れ　後"
@@ -145,6 +148,7 @@
 	"ParameterGroups": [],
 	"Parts": [
 		{
+<<<<<<< HEAD
 			"Id": "PartGlasses",
 			"Name": "メガネ"
 		},
@@ -194,5 +198,50 @@
 			"ParamAngleX",
 			"ParamAngleY"
 		]
+=======
+			"Id": "Part",
+			"Name": "メガネ"
+		},
+		{
+			"Id": "Part2",
+			"Name": "髪"
+		},
+		{
+			"Id": "Part3",
+			"Name": "左目 のコピー"
+		},
+		{
+			"Id": "Part6",
+			"Name": "右目 のコピー"
+		},
+		{
+			"Id": "Part9",
+			"Name": "*頭部 のコピー"
+		},
+		{
+			"Id": "Part10",
+			"Name": "*体 のコピー"
+		},
+		{
+			"Id": "Part11",
+			"Name": "後ろ髪とお団子 のコピー"
+		},
+		{
+			"Id": "Part4",
+			"Name": "左まつげ のコピー"
+		},
+		{
+			"Id": "Part5",
+			"Name": "左目ハイライト のコピー"
+		},
+		{
+			"Id": "Part7",
+			"Name": "右まつげ のコピー"
+		},
+		{
+			"Id": "Part8",
+			"Name": "右目ハイライト のコピー"
+		}
+>>>>>>> origin/feature/practice
 	]
 }
