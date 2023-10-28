@@ -50,7 +50,8 @@ export const ModelDir: string[] = [
   'Mark',
   'Natori',
   'Rice',
-  'Mao'
+  'Mao',
+  'practice'
 ];
 export const ModelDirSize: number = ModelDir.length;
 
