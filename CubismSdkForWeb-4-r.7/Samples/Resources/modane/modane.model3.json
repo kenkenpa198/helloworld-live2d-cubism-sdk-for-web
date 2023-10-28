@@ -5,16 +5,12 @@
 		"Textures": [
 			"modane.2048/texture_00.png"
 		],
-<<<<<<< HEAD
 		"Physics": "modane.physics3.json",
-=======
->>>>>>> origin/feature/practice
 		"DisplayInfo": "modane.cdi3.json"
 	},
 	"Groups": [
 		{
 			"Target": "Parameter",
-<<<<<<< HEAD
 			"Name": "LipSync",
 			"Ids": [
 				"ParamMouthOpenY"
@@ -22,23 +18,11 @@
 		},
 		{
 			"Target": "Parameter",
-=======
->>>>>>> origin/feature/practice
 			"Name": "EyeBlink",
 			"Ids": [
 				"ParamEyeLOpen",
 				"ParamEyeROpen"
 			]
-<<<<<<< HEAD
-=======
-		},
-		{
-			"Target": "Parameter",
-			"Name": "LipSync",
-			"Ids": [
-				"ParamMouthOpenY"
-			]
->>>>>>> origin/feature/practice
 		}
 	]
 }
