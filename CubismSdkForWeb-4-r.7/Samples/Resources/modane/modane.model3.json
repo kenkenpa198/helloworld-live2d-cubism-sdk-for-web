@@ -10,9 +10,14 @@
 		"Motions": {
 			"Idle": [
 				{
-					"File": "motions/modane_m01.motion3.json",
+					"File": "motions/random.motion3.json",
 					"FadeInTime": 0.5,
 					"FadeOutTime": 0.5
+				}
+			],
+			"TapBody": [
+				{
+					"File": "motions/smile.motion3.json"
 				}
 			]
 		}
@@ -32,6 +37,12 @@
 				"ParamEyeLOpen",
 				"ParamEyeROpen"
 			]
+		}
+	],
+	"HitAreas": [
+		{
+			"Id": "HitAreaBody",
+			"Name": "Body"
 		}
 	]
 }
