@@ -327,9 +327,9 @@ function onClickBegan(e: MouseEvent): void {
  * マウスポインタが動いたら呼ばれる。
  */
 function onMouseMoved(e: MouseEvent): void {
-  if (!LAppDelegate.getInstance()._captured) {
-    return;
-  }
+  // if (!LAppDelegate.getInstance()._captured) {
+  //   return;
+  // }
 
   if (!LAppDelegate.getInstance()._view) {
     LAppPal.printMessage('view notfound');
@@ -337,8 +337,10 @@ function onMouseMoved(e: MouseEvent): void {
   }
 
   const rect = (e.target as Element).getBoundingClientRect();
-  const posX: number = e.clientX - rect.left;
-  const posY: number = e.clientY - rect.top;
+  // const posX: number = e.clientX - rect.left;
+  // const posY: number = e.clientY - rect.top;
+  const posX = e.clientX - rect.left;
+  const posY = e.clientY - rect.top;
 
   LAppDelegate.getInstance()._view.onTouchesMoved(posX, posY);
 }
