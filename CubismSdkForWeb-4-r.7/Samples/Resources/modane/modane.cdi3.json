@@ -193,6 +193,10 @@
 		[
 			"ParamAngleX",
 			"ParamAngleY"
+		],
+		[
+			"ParamEyeBallX",
+			"ParamEyeBallY"
 		]
 	]
 }
