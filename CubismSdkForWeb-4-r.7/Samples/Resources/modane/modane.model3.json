@@ -10,6 +10,26 @@
 		"Motions": {
 			"Idle": [
 				{
+					"File": "motions/haru_g_idle.motion3.json",
+					"FadeInTime": 0.5,
+					"FadeOutTime": 0.5
+				},
+				{
+					"File": "motions/haru_g_m18.motion3.json",
+					"FadeInTime": 0.5,
+					"FadeOutTime": 0.5
+				},
+				{
+					"File": "motions/haru_g_m22.motion3.json",
+					"FadeInTime": 0.5,
+					"FadeOutTime": 0.5
+				},
+				{
+					"File": "motions/haru_g_m25.motion3.json",
+					"FadeInTime": 0.5,
+					"FadeOutTime": 0.5
+				},
+				{
 					"File": "motions/Hiyori_m01.motion3.json",
 					"FadeInTime": 0.5,
 					"FadeOutTime": 0.5
@@ -41,6 +61,16 @@
 				},
 				{
 					"File": "motions/Hiyori_m09.motion3.json",
+					"FadeInTime": 0.5,
+					"FadeOutTime": 0.5
+				},
+				{
+					"File": "motions/mtn_01.motion3.json",
+					"FadeInTime": 0.5,
+					"FadeOutTime": 0.5
+				},
+				{
+					"File": "motions/mtn_03.motion3.json",
 					"FadeInTime": 0.5,
 					"FadeOutTime": 0.5
 				}
