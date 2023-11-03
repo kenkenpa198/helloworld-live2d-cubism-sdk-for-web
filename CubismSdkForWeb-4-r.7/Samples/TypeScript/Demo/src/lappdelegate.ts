@@ -77,7 +77,7 @@ export class LAppDelegate {
     }
 
     // キャンバスを DOM に追加
-    document.body.appendChild(canvas);
+    document.getElementById("live2d_canvas").appendChild(canvas);
 
     if (!frameBuffer) {
       frameBuffer = gl.getParameter(gl.FRAMEBUFFER_BINDING);
@@ -157,7 +157,7 @@ export class LAppDelegate {
       LAppPal.updateTime();
 
       // 画面の初期化
-      gl.clearColor(0.0, 0.0, 0.0, 1.0);
+      gl.clearColor(0.0, 0.0, 0.0, 0.0); // 第四引数を 0.0 に変更して透明化
 
       // 深度テストを有効化
       gl.enable(gl.DEPTH_TEST);
