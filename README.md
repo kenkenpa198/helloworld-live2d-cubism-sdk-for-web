@@ -1,5 +1,5 @@
 <!-- omit in toc -->
-# Hello World - Live2D Cubism SDK for Web
+# practice - Live2D Cubism SDK for Web
 
 同 SDK の練習用リポジトリです。
 
@@ -7,7 +7,7 @@
 
 GitHub Pages でのデプロイ結果はこちら。
 
-- [https://kenkenpa198.github.io/helloworld-live2d-cubism-sdk-for-web/CubismSdkForWeb-4-r.7/Samples/TypeScript/Demo/index.html](https://kenkenpa198.github.io/helloworld-live2d-cubism-sdk-for-web/CubismSdkForWeb-4-r.7/Samples/TypeScript/Demo/index.html)
+- [https://kenkenpa198.github.io/practice-live2d-cubism-sdk-for-web/CubismSdkForWeb-4-r.7/Samples/TypeScript/Demo/index.html](https://kenkenpa198.github.io/practice-live2d-cubism-sdk-for-web/CubismSdkForWeb-4-r.7/Samples/TypeScript/Demo/index.html)
 
 <!-- omit in toc -->
 ## 目次
@@ -105,7 +105,7 @@ Live2D Cubism Core の再頒布・公開は前述の規約により禁止され�
     ```shell
     $ cd Samples/TypeScript/Demo/
     $ npm ls
-    Demo@ /.../helloworld-live2d-cubism-sdk-for-web/Samples/TypeScript/Demo
+    Demo@ /.../practice-live2d-cubism-sdk-for-web/Samples/TypeScript/Demo
     ├── @typescript-eslint/eslint-plugin@5.59.5
     ├── @typescript-eslint/parser@5.59.5
     ├── eslint-config-prettier@8.8.0
@@ -126,7 +126,7 @@ Live2D Cubism Core の再頒布・公開は前述の規約により禁止され�
     ```shell
     $ cd Framework
     $ npm ls
-    Framework@ /.../helloworld-live2d-cubism-sdk-for-web/Framework
+    Framework@ /.../practice-live2d-cubism-sdk-for-web/Framework
     ├── @typescript-eslint/eslint-plugin@5.59.5
     ├── @typescript-eslint/parser@5.59.5
     ├── eslint-config-prettier@8.8.0
@@ -163,7 +163,7 @@ GitHub リポジトリへプッシュ後、GitHub Pages で公開設定を行う
 
 `CubismSdkForWeb-4-r.7/Samples/TypeScript/Demo/index.html` へブラウザからアクセスして表示に問題が無ければ OK 。当リポジトリの場合は下記の URL となる。
 
-- [https://kenkenpa198.github.io/helloworld-live2d-cubism-sdk-for-web/CubismSdkForWeb-4-r.7/Samples/TypeScript/Demo/index.html](https://kenkenpa198.github.io/helloworld-live2d-cubism-sdk-for-web/CubismSdkForWeb-4-r.7/Samples/TypeScript/Demo/index.html)
+- [https://kenkenpa198.github.io/practice-live2d-cubism-sdk-for-web/CubismSdkForWeb-4-r.7/Samples/TypeScript/Demo/index.html](https://kenkenpa198.github.io/practice-live2d-cubism-sdk-for-web/CubismSdkForWeb-4-r.7/Samples/TypeScript/Demo/index.html)
 
 ## 3. メモ
 
