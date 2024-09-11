@@ -1,5 +1,5 @@
 <!-- omit in toc -->
-# practice - Live2D Cubism SDK for Web
+# Practice - Live2D Cubism SDK for Web
 
 同 SDK の練習用リポジトリです。
 
